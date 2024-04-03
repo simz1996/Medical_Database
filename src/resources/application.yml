@@ -1,0 +1,6 @@
+spring:
+    datasource:
+        druid:
+            driver-class-name: com.mysql.cj.jdbc.Driver
+            url: jdbc:mysql://localhost:3306/medical_reports?serverTimezone=Asia/Shanghai&useUnicode=ture&characterEncoding=utf-8&zeroDateTimeBehavior=
+            username:root

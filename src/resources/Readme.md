@@ -23,6 +23,12 @@ Update the database connection details in the DatabaseManager class according to
 Place your CSV file containing medical records in the "resources" directory of the project.
 
 Compile and run the EMRSystem class to extract, validate, parse, store, and display medical records.
+commands to run
+
+mvn clean install
+java -cp "target/classes:target/dependency/*" EMRSystem
+
+
 
 Requirements
 Java Development Kit (JDK)

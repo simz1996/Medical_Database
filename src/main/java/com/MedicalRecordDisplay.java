@@ -10,9 +10,9 @@ import java.util.logging.Logger;
 
 public class MedicalRecordDisplay {
     private static final Logger logger = Logger.getLogger(MedicalRecordDisplay.class.getName());
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/your_database";
-    private static final String DB_USER = "your_username";
-    private static final String DB_PASSWORD = "your_password";
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/medical_reports";
+    private static final String DB_USER = "root";
+    private static final String DB_PASSWORD = "Rule#1dontlose";
 
     public void displayMedicalRecords() {
         try (Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {

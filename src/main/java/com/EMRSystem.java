@@ -1,15 +1,13 @@
-import java.util.List;
+package com;
 
-import com.DatabaseManager;
-import com.IrregularDataHandler;
-import com.MedicalRecordDisplay;
-import com.MedicalRecordExtractor;
+import java.util.List;
 
 public class EMRSystem {
     public static void main(String[] args) {
         String filePath = "src/resources/med_data.csv";
 
         // Extract medical records
+      
         MedicalRecordExtractor extractor = new MedicalRecordExtractor();
         List<String[]> medicalRecords = extractor.extractFromCSV(filePath);
 
@@ -26,7 +24,7 @@ public class EMRSystem {
 
         // Display medical records from the database
         MedicalRecordDisplay display = new MedicalRecordDisplay();
-        display.displayMedicalRecords();
+           display.displayMedicalRecords();
     }
 }
 
